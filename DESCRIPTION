@@ -1,16 +1,26 @@
 Package: XentonalAssistant
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Composer's Assistant for Xentonal Music
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "M. Edward (Ed)", "Borasky",
+      email = "znmeb@algocompsynth.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: XentonalAssistant is an interactive tool for
+    composers of xentonal music. It provides tools for
+    creating recorded music using scales other than the
+    standard twelve tone equal tempered scale.
+License: MIT + file LICENSE
+URL: https://algocompsynth.github.io/XentonalAssistant/,
+    https://github.com/AlgoCompSynth/XentonalAssistant
+BugReports: https://github.com/AlgoCompSynth/XentonalAssistant/issues
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
 LazyData: true
+VignetteBuilder: knitr
+Depends: 
+    R (>= 4.6.0)
+Config/roxygen2/version: 8.0.0

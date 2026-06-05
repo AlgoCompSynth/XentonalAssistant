@@ -1,0 +1,10 @@
+*.html binary
+*.svg binary
+*.png binary
+*.jpg binary
+*.js binary
+*.map binary
+*.css binary
+*.json binary
+*.xml binary
+*.rproj text

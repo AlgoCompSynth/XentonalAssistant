@@ -1,0 +1,13 @@
+url: https://algocompsynth.github.io/XentonalAssistant
+template:
+  bootstrap: 5
+  bootswatch: darkly
+home:
+  sidebar:
+    structure: [links, license, community, citation, authors, dev]
+  links:
+
+  - text: M. Edward (Ed) Borasky on LinkedIn
+    href: https://www.linkedin.com/in/znmeb/
+  - text: AlgoCompSynth on Mastodon
+    href: https://mastodon.social/deck/@AlgoCompSynth
