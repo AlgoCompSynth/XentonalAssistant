@@ -3,3 +3,8 @@
 ^\.positai$
 ^\.claude$
 CODE_OF_CONDUCT.md
+_pkgdown.yml
+docs
+LICENSE.md
+README.Rmd
+inst/prompts/.gitkeep
