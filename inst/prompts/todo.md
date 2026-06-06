@@ -47,3 +47,10 @@
 - [ ] Verify all functions in R/scaling.R are unique and correctly named.
 - [ ] Review R/synthesis.R for consistency with scaling output.
 - [ ] Establish initial test suite skeletons (testthat).
+
+## Notes from znmeb 2026-06-05
+I fixed all the issues that were keeping `devtools::check()` from working and
+pushed everything to GitHub. I don't think any more needs to be done with the
+imported `eikosany` / `consonaR` code until there is agent code calling it. It's
+quite likely there will be changes to it once there's an agent that needs to use
+it.

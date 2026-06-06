@@ -18,3 +18,17 @@
 - [ ] Create system prompt template for xentonal music guidance.
 - [ ] Implement "Tool" definitions for common XentonalAssistant functions.
 - [ ] Handle file writing (WAV files) seamlessly via the agent.
+
+### Notes from znmeb
+
+There is an R package called `cli` for building terminal-oriented user interfaces.
+See <https://cli.r-lib.org/> for the documentation. It appears to be installed on
+the system already. There is also a Claude-compatible skill for it at 
+`~/Projects/skills/r-lib/cli`.
+
+```
+⬢ [R-AI-D-CUDA] ❯ ll ~/Projects/skills/r-lib/cli/
+total 12
+-rw-rw-r--+1 znmeb znmeb 11213 Jun  6 00:59 SKILL.md
+drwxrwxr-x+1 znmeb znmeb   134 Jun  6 00:59 references/
+```
