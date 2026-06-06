@@ -4,6 +4,7 @@
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/LICENSE-text.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/LICENSE.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/articles/about-scale-tables.html</loc></url>
+<url><loc>https://algocompsynth.github.io/XentonalAssistant/articles/chatting-with-the-assistant.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/articles/index.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/articles/introduction-to-combination-product-sets.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/authors.html</loc></url>
@@ -22,6 +23,7 @@
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/et_scale_generate.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/et_scale_named.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/freq2MIDI.html</loc></url>
+<url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/get_xen_tools.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/hello.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/index.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/interval_table.html</loc></url>
@@ -35,5 +37,6 @@
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/ratio2factors.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/render_cps_chords.html</loc></url>
 <url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/sine_dissonance.html</loc></url>
+<url><loc>https://algocompsynth.github.io/XentonalAssistant/reference/xen_chat.html</loc></url>
 </urlset>
 

@@ -30,6 +30,8 @@
   : Create Equal-Tempered Scale Table
 - [`freq2MIDI()`](https://algocompsynth.github.io/XentonalAssistant/reference/freq2MIDI.md)
   : Frequency to MIDI note number
+- [`get_xen_tools()`](https://algocompsynth.github.io/XentonalAssistant/reference/get_xen_tools.md)
+  : Define tools available to the xen.assist agent
 - [`interval_table()`](https://algocompsynth.github.io/XentonalAssistant/reference/interval_table.md)
   : Create Interval Table
 - [`keyboard_map()`](https://algocompsynth.github.io/XentonalAssistant/reference/keyboard_map.md)
@@ -52,3 +54,5 @@
   : Render the Chords of a CPS
 - [`sine_dissonance()`](https://algocompsynth.github.io/XentonalAssistant/reference/sine_dissonance.md)
   : Sine Wave Dissonance
+- [`xen_chat()`](https://algocompsynth.github.io/XentonalAssistant/reference/xen_chat.md)
+  : Define tools available to the xen.assist agent

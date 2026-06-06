@@ -2,7 +2,7 @@
 
 ### All vignettes
 
-- [About Scale
-  Tables](https://algocompsynth.github.io/XentonalAssistant/articles/about-scale-tables.md):
+- [Chatting with the Xentonal
+  Assistant](https://algocompsynth.github.io/XentonalAssistant/articles/chatting-with-the-assistant.md):
 - [Introduction to Combination Product
   Sets](https://algocompsynth.github.io/XentonalAssistant/articles/introduction-to-combination-product-sets.md):
