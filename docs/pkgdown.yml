@@ -1,8 +1,10 @@
 pandoc: 3.9.0.2
 pkgdown: 2.2.0
 pkgdown_sha: ~
-articles: {}
-last_built: 2026-06-05T21:25Z
+articles:
+  about-scale-tables: about-scale-tables.html
+  introduction-to-combination-product-sets: introduction-to-combination-product-sets.html
+last_built: 2026-06-06T18:58Z
 urls:
   reference: https://algocompsynth.github.io/XentonalAssistant/reference
   article: https://algocompsynth.github.io/XentonalAssistant/articles
