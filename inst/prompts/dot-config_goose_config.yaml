@@ -138,5 +138,5 @@ active_provider: ollama
 providers:
   ollama:
     enabled: true
-    model: gemma4:31b
+    model: gemma4:31b-it-qat
     configured: true
