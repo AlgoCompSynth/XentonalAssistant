@@ -47,6 +47,7 @@ sudo dnf --quiet --assumeyes install \
   curl \
   ffmpeg-devel \
   firefox \
+  gh \
   ghostty \
   libcurl-devel \
   lshw \
