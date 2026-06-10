@@ -65,6 +65,11 @@ echo "..Installing ROpenSci media utilities"
 sudo Rscript -e "install.packages(c('av', 'fluidsynth'), repos ='https://cloud.r-project.org/')" \
   >> $LOGFILE 2>&1
 
+echo "..Copying R / btw settings files to $HOME"
+cp Rprofile $HOME/.Rprofile
+cp Renviron $HOME/.Renviron
+cp btw.md $HOME/btw.md
+
 echo "..Exporting RStudio Desktop and Ghostty"
 distrobox-export --app \
   /usr/share/applications/com.mitchellh.ghostty.desktop

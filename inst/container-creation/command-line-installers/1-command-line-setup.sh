@@ -12,11 +12,6 @@ mkdir --parents $PROJECTS
 export LOGFILE=$LOGFILES/command-line-setup.log
 rm --force $LOGFILE
 
-echo "..Copying R / btw settings files to $HOME"
-cp Rprofile $HOME/.Rprofile
-cp Renviron $HOME/.Renviron
-cp btw.md $HOME/btw.md
-
 for script in \
   ./aliases.sh \
   ./starship.sh \
