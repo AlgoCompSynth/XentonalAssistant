@@ -16,8 +16,6 @@ sudo dnf --quiet --assumeyes copr enable iucar/cran \
   >> $LOGFILE 2>&1
 sudo dnf --quiet --assumeyes copr enable iucar/rstudio \
   >> $LOGFILE 2>&1
-sudo dnf --quiet --assumeyes copr enable scottames/ghostty \
-  >> $LOGFILE 2>&1
 
 
 echo "..Installing"
@@ -48,7 +46,6 @@ sudo dnf --quiet --assumeyes install \
   ffmpeg-devel \
   firefox \
   gh \
-  ghostty \
   libcurl-devel \
   libsndfile-devel \
   lshw \
@@ -70,8 +67,6 @@ cp Rprofile $HOME/.Rprofile
 cp Renviron $HOME/.Renviron
 cp btw.md $HOME/btw.md
 
-echo "..Exporting RStudio Desktop and Ghostty"
-distrobox-export --app \
-  /usr/share/applications/com.mitchellh.ghostty.desktop
+echo "..Exporting RStudio Desktop
 distrobox-export --app \
   /usr/share/applications/rstudio.desktop
