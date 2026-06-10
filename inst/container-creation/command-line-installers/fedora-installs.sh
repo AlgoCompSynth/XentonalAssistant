@@ -50,6 +50,7 @@ sudo dnf --quiet --assumeyes install \
   gh \
   ghostty \
   libcurl-devel \
+  libsndfile-devel \
   lshw \
   neovim \
   rstudio-desktop \
