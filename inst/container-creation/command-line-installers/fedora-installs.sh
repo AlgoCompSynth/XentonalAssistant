@@ -62,3 +62,9 @@ sudo systemctl enable --now rstudio-server.service
 echo "..Installing ROpenSci media utilities"
 sudo Rscript -e "install.packages(c('av', 'fluidsynth'), repos ='https://cloud.r-project.org/')" \
   >> $LOGFILE 2>&1
+
+echo "..Exporting RStudio Desktop and Ghostty"
+distrobox-export --app \
+  /usr/share/applications/com.mitchellh.ghostty.desktop
+distrobox-export --app \
+  /usr/share/applications/rstudio.desktop
