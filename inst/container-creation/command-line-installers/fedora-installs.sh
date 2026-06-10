@@ -16,6 +16,9 @@ sudo dnf --quiet --assumeyes copr enable iucar/cran \
   >> $LOGFILE 2>&1
 sudo dnf --quiet --assumeyes copr enable iucar/rstudio \
   >> $LOGFILE 2>&1
+sudo dnf --quiet --assumeyes copr enable scottames/ghostty \
+  >> $LOGFILE 2>&1
+
 
 echo "..Installing"
 sudo dnf --quiet --assumeyes install \
@@ -44,6 +47,7 @@ sudo dnf --quiet --assumeyes install \
   curl \
   ffmpeg-devel \
   firefox \
+  ghostty \
   libcurl-devel \
   lshw \
   neovim \
