@@ -1,0 +1,14 @@
+#! /usr/bin/env -S bash -l
+
+set -e
+
+source set-container-envars
+
+# https://docs.ollama.com/linux#install
+echo "..Installing Ollama with official installer"
+curl -fsSL https://ollama.com/install.sh | sh || true
+sudo systemctl enable --now ollama.service
+ollama --version || true
+
+echo "** Finished Ollama **"
+echo ""
