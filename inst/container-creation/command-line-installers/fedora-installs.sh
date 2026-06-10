@@ -3,18 +3,19 @@
 set -e
 
 source set-container-envars
+mkdir --parents $LOGFILES
 export LOGFILE=$LOGFILES/fedora-installs.log
 rm --force $LOGFILE
 
 echo "..Upgrading"
 sudo dnf --quiet --assumeyes upgrade \
-  > $LOGFILE 2>&1
+  >> $LOGFILE 2>&1
 
 echo "..Enabling COPRs"
 sudo dnf --quiet --assumeyes copr enable iucar/cran \
-  > $LOGFILE 2>&1
+  >> $LOGFILE 2>&1
 sudo dnf --quiet --assumeyes copr enable iucar/rstudio \
-  > $LOGFILE 2>&1
+  >> $LOGFILE 2>&1
 
 echo "..Installing"
 sudo dnf --quiet --assumeyes install \
@@ -50,10 +51,10 @@ sudo dnf --quiet --assumeyes install \
   rstudio-server \
   texlive-bibtools \
   zstd \
-  > $LOGFILE 2>&1
+  >> $LOGFILE 2>&1
 
 sudo systemctl enable --now rstudio-server.service
 
 echo "..Installing ROpenSci media utilities"
 sudo Rscript -e "install.packages(c('av', 'fluidsynth'), repos ='https://cloud.r-project.org/')" \
-  > $LOGFILE 2>&1
+  >> $LOGFILE 2>&1
