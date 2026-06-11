@@ -67,6 +67,6 @@ cp Rprofile $HOME/.Rprofile
 cp Renviron $HOME/.Renviron
 cp btw.md $HOME/btw.md
 
-echo "..Exporting RStudio Desktop
+echo "..Exporting RStudio Desktop"
 distrobox-export --app \
   /usr/share/applications/rstudio.desktop
