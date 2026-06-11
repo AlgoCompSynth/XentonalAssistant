@@ -51,12 +51,9 @@ sudo dnf --quiet --assumeyes install \
   lshw \
   neovim \
   rstudio-desktop \
-  rstudio-server \
   texlive-bibtools \
   zstd \
   >> $LOGFILE 2>&1
-
-sudo systemctl enable --now rstudio-server.service
 
 echo "..Installing ROpenSci media utilities"
 sudo Rscript -e "install.packages(c('av', 'fluidsynth'), repos ='https://cloud.r-project.org/')" \
