@@ -17,7 +17,6 @@ sudo dnf --quiet --assumeyes copr enable iucar/cran \
 sudo dnf --quiet --assumeyes copr enable iucar/rstudio \
   >> $LOGFILE 2>&1
 
-
 echo "..Installing"
 sudo dnf --quiet --assumeyes install \
   R-CoprManager \
@@ -42,8 +41,10 @@ sudo dnf --quiet --assumeyes install \
   R-CRAN-tuneR \
   R-CRAN-warbleR \
   R-devel \
+  alsa-utils \
   curl \
   ffmpeg-devel \
+  fluidsynth-devel \
   firefox \
   gh \
   libcurl-devel \
