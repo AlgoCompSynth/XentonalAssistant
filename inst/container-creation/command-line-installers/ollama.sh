@@ -16,8 +16,5 @@ sudo chown --recursive ollama.ollama /usr/share/ollama
 sudo systemctl enable --now ollama.service
 systemctl status ollama.service
 
-echo ""
-ollama list
-
 echo "** Finished Ollama **"
 echo ""
