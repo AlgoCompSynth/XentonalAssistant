@@ -19,8 +19,3 @@ echo "..Installing goose"
 curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | CONFIGURE=false bash -l > /dev/null
 echo "..Goose is installed."
 echo "..You will need to run 'goose configure' to set the Ollama model."
-
-# https://posit-dev.github.io/assistant/docs/downloads/tui/https://posit-dev.github.io/assistant/docs/downloads/tui/
-echo "..Installing Posit Assistant TUI"
-curl -fsSL https://posit-dev.github.io/assistant/builds/install-tui.sh | bash > /dev/null
-echo "..Posit Assistant TUI is installed."
