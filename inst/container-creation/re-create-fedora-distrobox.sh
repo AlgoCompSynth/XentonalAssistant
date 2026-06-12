@@ -4,14 +4,18 @@ set -e
 
 echo "* Re-create Fedora Distrobox *"
 
-distrobox assemble create \
+/usr/bin/time distrobox assemble create \
  --file fedora-distrobox.ini
 
 pushd command-line-installers > /dev/null
-  distrobox enter fedora-distrobox  -- ./fedora-installs.sh
-  distrobox enter fedora-distrobox  -- ./1-command-line-setup.sh
+  /usr/bin/time distrobox enter fedora-distrobox  -- ./fedora-installs.sh
+  /usr/bin/time distrobox enter fedora-distrobox  -- ./1-command-line-setup.sh
 
 popd > /dev/null
+
+echo ""
+echo "You need to set a password for $USER for RStudio Server logins"
+distrobox enter fedora-distrobox -- sudo passwd $USER
 
 echo "* Finished Re-create Fedora Distrobox *"
 echo ""
