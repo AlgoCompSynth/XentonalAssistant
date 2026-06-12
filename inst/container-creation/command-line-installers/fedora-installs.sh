@@ -10,17 +10,17 @@ export LOGFILE=$LOGFILES/fedora-installs.log
 rm --force $LOGFILE
 
 echo "..Upgrading"
-sudo dnf --quiet --assumeyes upgrade \
+sudo dnf --assumeyes upgrade \
   >> $LOGFILE 2>&1
 
 echo "..Enabling COPRs"
-sudo dnf --quiet --assumeyes copr enable iucar/cran \
+sudo dnf --assumeyes copr enable iucar/cran \
   >> $LOGFILE 2>&1
-sudo dnf --quiet --assumeyes copr enable iucar/rstudio \
+sudo dnf --assumeyes copr enable iucar/rstudio \
   >> $LOGFILE 2>&1
 
 echo "..Installing"
-sudo dnf --quiet --assumeyes install \
+sudo dnf --assumeyes install \
   R-CoprManager \
   R-CRAN-GA \
   R-CRAN-Rdpack \
