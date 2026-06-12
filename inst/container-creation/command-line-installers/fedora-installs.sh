@@ -64,6 +64,10 @@ echo "..Updating packages"
 sudo Rscript -e "update.packages(ask = FALSE, repos ='https://cloud.r-project.org/')" \
   >> $LOGFILE 2>&1
 
+echo "..Installing rsthemes"
+sudo Rscript -e "devtools::install_github('gadenbuie/rsthemes', build_vignettes = TRUE)" \
+  >> $LOGFILE 2>&1
+
 echo "..Installing ROpenSci media utilities"
 sudo Rscript -e "install.packages(c('av', 'fluidsynth'), repos ='https://cloud.r-project.org/')" \
   >> $LOGFILE 2>&1
