@@ -2,7 +2,7 @@
 
 set -e
 
-source set-container-envars
+source set-container-envars > /dev/null
 
 echo "..Setting starship configuration file" 1>&2
 mkdir --parents $HOME/.config

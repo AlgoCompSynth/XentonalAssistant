@@ -2,7 +2,7 @@
 
 set -e
 
-source set-container-envars
+source set-container-envars > /dev/null
 
 if [[ "$(grep R-AI-D-aliases $HOME/.bashrc | wc -l)" == "0" ]]
 then

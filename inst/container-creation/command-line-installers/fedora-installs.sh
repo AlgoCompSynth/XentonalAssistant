@@ -2,10 +2,15 @@
 
 set -e
 
+echo "** Fedora Installs **"
+
 source set-container-envars
 mkdir --parents $LOGFILES
 export LOGFILE=$LOGFILES/fedora-installs.log
 rm --force $LOGFILE
+
+echo "You need to enter a password for $USER to use RStudio Server"
+sudo passwd $USER
 
 echo "..Upgrading"
 sudo dnf --quiet --assumeyes upgrade \
@@ -32,6 +37,7 @@ sudo dnf --quiet --assumeyes install \
   R-CRAN-NatureSounds \
   R-CRAN-numbers \
   R-CRAN-phonTools \
+  R-CRAN-rstudiothemes \
   R-CRAN-seewave \
   R-CRAN-shinychat \
   R-CRAN-signal \
@@ -52,8 +58,13 @@ sudo dnf --quiet --assumeyes install \
   lshw \
   neovim \
   rstudio-desktop \
+  rstudio-server \
   texlive-bibtools \
   zstd \
+  >> $LOGFILE 2>&1
+
+echo "..Updating packages"
+sudo Rscript -e "update.packages(ask = FALSE, repos ='https://cloud.r-project.org/')" \
   >> $LOGFILE 2>&1
 
 echo "..Installing ROpenSci media utilities"
@@ -68,3 +79,9 @@ cp btw.md $HOME/btw.md
 echo "..Exporting RStudio Desktop"
 distrobox-export --app \
   /usr/share/applications/rstudio.desktop
+
+echo "..Enabling RStudio Server"
+sudo systemctl enable --now rstudio-server.service
+
+echo "** Finished Fedora Installs **"
+echo ""
