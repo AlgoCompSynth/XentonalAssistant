@@ -9,9 +9,6 @@ mkdir --parents $LOGFILES
 export LOGFILE=$LOGFILES/fedora-installs.log
 rm --force $LOGFILE
 
-echo "You need to enter a password for $USER to use RStudio Server"
-sudo passwd $USER
-
 echo "..Upgrading"
 sudo dnf --quiet --assumeyes upgrade \
   >> $LOGFILE 2>&1
