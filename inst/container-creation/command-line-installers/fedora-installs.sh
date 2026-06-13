@@ -45,17 +45,31 @@ sudo dnf --assumeyes install --skip-unavailable \
   R-CRAN-warbleR \
   R-devel \
   alsa-utils \
+  cargo \
+  cmake \
   curl \
   ffmpeg-devel \
+  fftw-devel \
   fluidsynth-devel \
   firefox \
+  fontconfig-devel \
+  freetype-devel \
+  fribidi-devel \
   gh \
+  harfbuzz-devel \
   libcurl-devel \
+  libjpeg-devel \
+  libpng-devel \
   libsndfile-devel \
+  libtiff-devel \
+  libuv-devel \
+  libwebp-devel \
+  libxml2-devel \
   lshw \
   neovim \
   rstudio-desktop \
   rstudio-server \
+  rustc \
   texlive-bibtools \
   zstd \
   >> $LOGFILE 2>&1
@@ -64,8 +78,8 @@ echo "..Updating packages"
 sudo Rscript -e "update.packages(ask = FALSE, repos ='https://cloud.r-project.org/')" \
   >> $LOGFILE 2>&1
 
-echo "..Installing ROpenSci media utilities"
-sudo Rscript -e "install.packages(c('av', 'fluidsynth'), repos ='https://cloud.r-project.org/')" \
+echo "..Backup plan if iucar/CRAN COPR isn't available"
+sudo ./R-installs.R \
   >> $LOGFILE 2>&1
 
 echo "..Copying R / btw settings files to $HOME"
