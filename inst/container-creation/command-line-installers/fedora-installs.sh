@@ -20,7 +20,7 @@ sudo dnf --assumeyes copr enable iucar/rstudio \
   >> $LOGFILE 2>&1
 
 echo "..Installing"
-sudo dnf --assumeyes install \
+sudo dnf --assumeyes install --skip-unavailable \
   R-CoprManager \
   R-CRAN-GA \
   R-CRAN-Rdpack \
